@@ -1,0 +1,10 @@
+### aliases ###
+alias ll='ls -FGlAhp'
+alias docker-env='eval "$(docker-machine env default)"'
+alias cdwork='cd ~/Documents/workspace'
+alias cdhris='cd ~/Documents/workspace/hris'
+alias cdcore='cd /Volumes/workspace/work/core'
+alias tmux='TERM=screen-256color tmux'
+alias dockerstopall='docker stop $(docker ps -a -q)'
+alias fix_stty='stty sane'
+

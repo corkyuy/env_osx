@@ -1,5 +1,15 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$PATH
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.script:$PATH"
+#export PATH="$HOME/.node/bin:$PATH"
+export PATH="$HOME/Documents/workspace/go/bin:$PATH"
+export PATH="$HOME/Documents/workspace/xen/bin:$PATH"
+export PATH="~/.app:$PATH"
+
+### PYTHON ###
+# pyenv #
+eval "$(pyenv init -)"
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/corkyuy/.oh-my-zsh
@@ -88,3 +98,9 @@ source $ZSH/oh-my-zsh.sh
 
 # VIM key bindings
 bindkey -v
+
+# Terminal color
+export TERM=screen-256color
+
+# alias
+source ~/.alias
