@@ -1,0 +1,5 @@
+#!/bin/bash
+cp ~/.script/guard.tar.gz .
+tar xvfz guard.tar.gz
+rm guard.tar.gz
+bundle install
