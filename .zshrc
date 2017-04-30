@@ -110,3 +110,5 @@ repo_information() {
 
 # alias
 source ~/.alias
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
