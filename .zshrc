@@ -102,5 +102,11 @@ bindkey -v
 # Terminal color
 export TERM=screen-256color
 
+repo_information() {
+    echo "%F{blue}${vcs_info_msg_0_%%/.} %F{green}$vcs_info_msg_1_`git_dirty` $vcs_info_msg_2_%f"
+}
+
+
+
 # alias
 source ~/.alias
