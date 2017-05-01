@@ -48,6 +48,7 @@ call plug#begin('~/.vim/plugged')
   " Plug 'jooty/vdebug'
   " Plug 'Rip-Rip/clang_complete'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  Plug 'junegunn/fzf.vim'
 
 filetype plugin indent on                   " required!
 call plug#end()
