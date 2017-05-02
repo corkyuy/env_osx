@@ -20,8 +20,7 @@ set hidden                      " Buffers can exist in the background
 set history=1000                " Store lots of :cmdline history
 set hlsearch                    " Highlight searches
 set incsearch
-set nobackup                    " Do not create backup files
-set noswapfile                  " Do not create swap files
+set nobackup                    " Do not create backup files set noswapfile                  " Do not create swap files
 set number                      " Line numbers are nice
 set showcmd                     " Show incomplete cmds down the bottom
 set vb                          " Turn off beep sound
@@ -29,7 +28,8 @@ set t_vb=                       " Turn off beep sound
 set noerrorbells
 set visualbell
 set title
-let mapleader=","
+let mapleader="\<Space>"
+" let mapleader=","
 
 "
 " Indentation and Display
@@ -161,13 +161,16 @@ vmap a- :Tabularize /-><CR>
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_root_markers = ['.ctrlp']
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-    \ 'file': '\v\.(exe|so|dll)$',
+    \ 'file': '\v\.(exe|so|dll|pdf|jpg|docx|xls.*|mp4|[\/]dist)$',
     \ }
+map <silent> <Leader>t :CtrlP()<CR>
+noremap <leader>b<space> :CtrlPBuffer<cr>
 
-" Switch panel shortcut
+
+
+" Switch panel shortcut (TMUX)
 " =============================
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -196,3 +199,6 @@ let g:fzf_action = {
 
 
 
+" Haskell specific
+autocmd FileType haskell :so ~/.vimrc_haskell.vim
+autocmd FileType cabal :so ~/.vimrc_haskell.vim

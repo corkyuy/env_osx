@@ -26,7 +26,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'christoomey/vim-tmux-navigator'   " Vim - TMUX navigator
   " Plug 'bronson/vim-trailing-whitespace'
   " Plug 'evidens/vim-twig'
-  " Plug 'scrooloose/syntastic'             " Error display
   " Plug 'gmarik/Vundle.vim'               " should be called from main vimrc
   " Plug 'rking/ag.vim'                     " Ag / grep
   " Plug 'airblade/vim-gitgutter'
@@ -38,9 +37,6 @@ call plug#begin('~/.vim/plugged')
   " Plug 'wesQ3/vim-windowswap'             " <leader>ww
   " Plug 'terryma/vim-multiple-cursors'
   " Plug 'rstacruz/sparkup'                 " HTML Zen coding
-  " Plug 'eagletmt/ghcmod-vim'
-  " Plug 'eagletmt/neco-ghc'
-  " Plug 'Shougo/neocomplete.vim'
   " Plug 'Shougo/vimproc.vim'
   " Plug 'SirVer/ultisnips'
   " Plug 'honza/vim-snippets'
@@ -50,5 +46,19 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
 
-filetype plugin indent on                   " required!
+  " Haskell
+  Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+  Plug 'eagletmt/ghcmod-vim'
+  Plug 'eagletmt/neco-ghc'
+  Plug 'scrooloose/syntastic'             " Error display
+  Plug 'tomtom/tlib_vim'                  "
+  Plug 'MarcWeber/vim-addon-mw-utils'     "
+  Plug 'garbas/vim-snipmate'              "
+  Plug 'ervandew/supertab'                "
+  Plug 'Shougo/neocomplete'               "
+  Plug 'junegunn/fzf.vim'
+filetype plugin indent on                 " required!
 call plug#end()
+
+
+
