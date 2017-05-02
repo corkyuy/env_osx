@@ -59,16 +59,22 @@ set ignorecase
 set modelines=0
 set showmatch
 set gdefault
-nnoremap <leader><space> :noh<cr>
-nnoremap <tab> %
-vnoremap <tab> %
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=80
-highlight ColorColumn ctermbg=darkgray
 set relativenumber
 set completeopt=menuone,menu,longest
+set shiftwidth  =2 |
+set tabstop     =2 |
+set softtabstop =2 |
+set expandtab
 
+
+highlight ColorColumn ctermbg=darkgray
+
+nnoremap <leader><space> :noh<cr>
+nnoremap <tab> %
+vnoremap <tab> %
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
@@ -86,11 +92,6 @@ nmap <C-o> o<ESC>
 
 " nnoremap <leader>a :Ack
 " nnoremap <leader>s :!cmake .<cr>
-
-setlocal shiftwidth  =2 |
-setlocal tabstop     =2 |
-setlocal softtabstop =2 |
-setlocal expandtab
 
 if has("gui_running")
     if has("gui_macvim")
@@ -126,13 +127,6 @@ let g:airline#extensions#tabline#enabled = 1
 set laststatus=1
 
 
-" ghc-mod
-" ==============
-map <silent> tw :GhcModTypeInsert<CR>
-map <silent> ts :GhcModSplitFunCase<CR>
-map <silent> tq :GhcModType<CR>
-map <silent> te :GhcModTypeClear<CR>
-
 function! TrimWhiteSpace()
   %s/\s*$//
   ''
@@ -147,14 +141,6 @@ let g:solarized_visibility = "medium"
 let g:solarized_contrast = "high"
 let g:solarized_termcolor = 16
 colorscheme solarized
-
-
-" Tabular
-" =============================
-let g:haskell_tabular = 1
-vmap a= :Tabularize /=<CR>
-vmap a; :Tabularize /::<CR>
-vmap a- :Tabularize /-><CR>
 
 " CTRLP
 " =============================
@@ -202,3 +188,7 @@ let g:fzf_action = {
 " Haskell specific
 autocmd FileType haskell :so ~/.vimrc_haskell.vim
 autocmd FileType cabal :so ~/.vimrc_haskell.vim
+
+autocmd FileType php :so ~/.vimrc_php.vim
+
+autocmd FileType cpp :so ~/.vimrc_cpp.vim

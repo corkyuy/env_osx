@@ -11,33 +11,33 @@ endif
 " Setup default
 syntax on
 filetype plugin indent on 
-set nocompatible
-set number
-set nowrap
-set showmode
-set tw=80
-set smartcase
-set smarttab
-set smartindent
-set autoindent
-set softtabstop=2
-set shiftwidth=2
-set expandtab
-set incsearch
-set mouse=a
-set history=1000
-set clipboard=unnamedplus,autoselect
-
-set completeopt=menuone,menu,longest
-
-set wildignore+=*\\tmp\\*,*.swp,*.swo,*.zip,.git,.cabal-sandbox
-set wildmode=longest,list,full
-set wildmenu
-set completeopt+=longest
-
-set t_Co=256
-
-set cmdheight=1
+setlocal nocompatible
+setlocal number
+setlocal nowrap
+setlocal showmode
+setlocal tw=80
+setlocal smartcase
+setlocal smarttab
+setlocal smartindent
+setlocal autoindent
+setlocal softtabstop=2
+setlocal shiftwidth=2
+setlocal expandtab
+setlocal incsearch
+setlocal mouse=a
+setlocal history=1000
+setlocal clipboard=unnamedplus,autoselect
+setlocal shiftwidth  =2 |
+setlocal tabstop     =2 |
+setlocal softtabstop =2 |
+setlocal expandtab
+setlocal completeopt=menuone,menu,longest
+setlocal wildignore+=*\\tmp\\*,*.swp,*.swo,*.zip,.git,.cabal-sandbox
+setlocal wildmode=longest,list,full
+setlocal wildmenu
+setlocal completeopt+=longest
+setlocal t_Co=256
+setlocal cmdheight=1
 
 " Syntastic
 map <Leader>s :SyntasticToggleMode<CR>
