@@ -73,6 +73,4 @@ vmap a= :Tabularize /=<CR>
 vmap a; :Tabularize /::<CR>
 vmap a- :Tabularize /-><CR>
 
-call ExtractSnipFile('~/.vim/snippets/haskell.snipet', 'haskell')
-
 
