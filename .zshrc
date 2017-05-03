@@ -112,3 +112,5 @@ repo_information() {
 source ~/.alias
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export PATH=$(stack path --bin-path)

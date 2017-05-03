@@ -306,3 +306,5 @@ EOT
 ### OCAML ###
     . /Users/corkyuy/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
+### STACK ###
+    export PATH=$(stack path --bin-path)

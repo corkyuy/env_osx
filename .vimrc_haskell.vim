@@ -41,13 +41,19 @@ setlocal cmdheight=1
 
 " Syntastic
 map <Leader>s :SyntasticToggleMode<CR>
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+setlocal statusline+=%#warningmsg#
+setlocal statusline+=%{SyntasticStatuslineFlag()}
+setlocal statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
+
+if empty(glob("./stack.yaml"))
+  " Nothing
+else
+  let g:syntastic_haskell_hdevtools_exec = 'hdevtools-stack'
+endif
 
 " ghc-mod
 map <silent> tw :GhcModTypeInsert<CR>
@@ -72,7 +78,4 @@ let g:haskell_tabular = 1
 vmap a= :Tabularize /=<CR>
 vmap a; :Tabularize /::<CR>
 vmap a- :Tabularize /-><CR>
-
-call ExtractSnipFile('~/.vim/snippets/haskell.snipet', 'haskell')
-
 

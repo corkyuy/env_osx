@@ -38,11 +38,10 @@ call plug#begin('~/.vim/plugged')
   " Plug 'terryma/vim-multiple-cursors'
   " Plug 'rstacruz/sparkup'                 " HTML Zen coding
   " Plug 'Shougo/vimproc.vim'
-  " Plug 'SirVer/ultisnips'
-  " Plug 'honza/vim-snippets'
   " Plug 'mattn/emmet-vim'                  " HTML Emmet
   " Plug 'jooty/vdebug'
   " Plug 'Rip-Rip/clang_complete'
+  " Plug 'garbas/vim-snipmate'              "
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
 
@@ -53,10 +52,12 @@ call plug#begin('~/.vim/plugged')
   Plug 'scrooloose/syntastic'             " Error display
   Plug 'tomtom/tlib_vim'                  "
   Plug 'MarcWeber/vim-addon-mw-utils'     "
-  Plug 'garbas/vim-snipmate'              "
   Plug 'ervandew/supertab'                "
   Plug 'Shougo/neocomplete'               "
   Plug 'junegunn/fzf.vim'
+  Plug 'bitc/vim-hdevtools.vim'
+  Plug 'SirVer/ultisnips'
+  Plug 'honza/vim-snippets'
 filetype plugin indent on                 " required!
 call plug#end()
 
