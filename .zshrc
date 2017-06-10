@@ -108,8 +108,8 @@ repo_information() {
 
 
 
-# alias
-source ~/.alias
+source ~/config/.alias
+source ~/config/.make_osx_better
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
