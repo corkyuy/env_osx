@@ -5,8 +5,8 @@
 * :Files -> FZF
 * Surround
 
-  |Command | example |
-  |cs "'   | "Hello world"<br>'Hello world'|
+|Command | example |
+|cs "'   | "Hello world"<br>'Hello world'|
 
 
 ## TMUX
