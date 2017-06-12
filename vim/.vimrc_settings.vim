@@ -200,3 +200,6 @@ autocmd FileType cabal :so ~/.vimrc_haskell.vim
 autocmd FileType php :so ~/.vimrc_php.vim
 
 autocmd FileType cpp :so ~/.vimrc_cpp.vim
+
+" yy not working
+set clipboard=unnamed
