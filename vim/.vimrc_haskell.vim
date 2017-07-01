@@ -26,7 +26,7 @@ setlocal expandtab
 setlocal incsearch
 setlocal mouse=a
 setlocal history=1000
-setlocal clipboard=unnamedplus,autoselect
+"setlocal clipboard=unnamedplus,autoselect
 setlocal shiftwidth  =2 |
 setlocal tabstop     =2 |
 setlocal softtabstop =2 |
