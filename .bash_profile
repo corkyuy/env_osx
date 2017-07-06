@@ -64,3 +64,8 @@ source ~/config/.make_osx_better
 
 ### STACK ###
     export PATH=$(stack path --bin-path)
+
+### NOTES ###
+    source ~/config/.script/notes.sh
+
+

@@ -2,6 +2,9 @@
 
 ## TODO TXT
 
+.todo.cfg -> ~/.todo/config
+
+
 ## VIM
 
 * :Files -> FZF
