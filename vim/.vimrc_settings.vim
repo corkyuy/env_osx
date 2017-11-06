@@ -108,18 +108,18 @@ nnoremap ; :
 inoremap jk <Esc>
 
 
-" Plugin Options
-" ==============
-  " JK motions: Line motions
-map <Leader>j <Plug>(easymotion-j)
-map <Leader>k <Plug>(easymotion-k)
-" nnoremap / /\v
-" vnoremap / /\v
-map <Leader> <Plug>(easymotion-prefix)
-nnoremap / /\v
-vnoremap / /\v
-map  / <Plug>(easymotion-sn)
-omap / <Plug>(easymotion-tn)
+"" Plugin Options
+"" ==============
+"  " JK motions: Line motions
+"map <Leader>j <Plug>(easymotion-j)
+"map <Leader>k <Plug>(easymotion-k)
+"" nnoremap / /\v
+"" vnoremap / /\v
+"map <Leader> <Plug>(easymotion-prefix)
+"nnoremap / /\v
+"vnoremap / /\v
+"map  / <Plug>(easymotion-sn)
+"omap / <Plug>(easymotion-tn)
 
 " vim-airlines
 " ==============
@@ -164,42 +164,42 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 
-" FZF
-" ============================
-" Insert mode completion
-imap <c-x><c-k> <plug>(fzf-complete-word)
-imap <c-x><c-f> <plug>(fzf-complete-path)
-imap <c-x><c-j> <plug>(fzf-complete-file-ag)
-imap <c-x><c-l> <plug>(fzf-complete-line)
-
-" Replace the default dictionary completion with fzf-based fuzzy completion
-" inoremap <expr> <c-x><c-k> fzf#complete('cat /usr/share/dict/words')
-
-" fzf layout
-let g:fzf_layout = { 'down': '~40%' }
-" This is the default extra key bindings
-let g:fzf_action = {
-  \ 'ctrl-t': 'tab split',
-  \ 'ctrl-x': 'split',
-  \ 'ctrl-v': 'vsplit' }
+"" FZF
+"" ============================
+"" Insert mode completion
+"imap <c-x><c-k> <plug>(fzf-complete-word)
+"imap <c-x><c-f> <plug>(fzf-complete-path)
+"imap <c-x><c-j> <plug>(fzf-complete-file-ag)
+"imap <c-x><c-l> <plug>(fzf-complete-line)
+"
+"" Replace the default dictionary completion with fzf-based fuzzy completion
+"" inoremap <expr> <c-x><c-k> fzf#complete('cat /usr/share/dict/words')
+"
+"" fzf layout
+"let g:fzf_layout = { 'down': '~40%' }
+"" This is the default extra key bindings
+"let g:fzf_action = {
+"  \ 'ctrl-t': 'tab split',
+"  \ 'ctrl-x': 'split',
+"  \ 'ctrl-v': 'vsplit' }
 
 " UltiSnips
 " ============================
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+""let g:UltiSnipsExpandTrigger="<tab>"
+""let g:UltiSnipsJumpForwardTrigger="<c-b>"
+""let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
 " Haskell specific
-autocmd FileType haskell :so ~/.vimrc_haskell.vim
-autocmd FileType cabal :so ~/.vimrc_haskell.vim
-
-autocmd FileType php :so ~/.vimrc_php.vim
-
-autocmd FileType cpp :so ~/.vimrc_cpp.vim
+"#autocmd FileType haskell :so ~/.vimrc_haskell.vim
+"#autocmd FileType cabal :so ~/.vimrc_haskell.vim
+"
+"#autocmd FileType php :so ~/.vimrc_php.vim
+"
+"#autocmd FileType cpp :so ~/.vimrc_cpp.vim
 
 " yy not working
-set clipboard=unnamed
+""set clipboard=unnamed

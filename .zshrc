@@ -113,4 +113,13 @@ source ~/config/.make_osx_better
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export PATH=$(stack path --bin-path)
+#export PATH=$(stack path --bin-path)
+
+if [ -z ${NIX_REMOTE+x} ]; then
+  echo "NOT NIX";
+else
+  echo "Loading NIX profile"
+  source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh;
+fi
+
+

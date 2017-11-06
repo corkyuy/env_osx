@@ -15,15 +15,15 @@ call plug#begin('~/.vim/plugged')
 
 " --- PLUGINs HERE
   Plug 'tpope/vim-vinegar'                " Vim Explorer extension
-  Plug 'tpope/vim-fugitive'               " Git
-  Plug 'tpope/vim-surround'               " Surround
+  " Plug 'tpope/vim-fugitive'               " Git
+  " Plug 'tpope/vim-surround'               " Surround
   Plug 'kien/ctrlp.vim'                   " Fast file loading
   Plug 'vim-airline/vim-airline'          " Status line
-  Plug 'Lokaltog/vim-easymotion'          " Easy movement <Leader>-[j/k]
+  " Plug 'Lokaltog/vim-easymotion'          " Easy movement <Leader>-[j/k]
   Plug 'altercation/vim-colors-solarized' " Solarized color-scheme
-  Plug 'godlygeek/tabular'                " Tabularize a-=
-  Plug 'sjl/clam.vim'                     " Run shell command
-  Plug 'tpope/vim-commentary'             " Commentary
+  " Plug 'godlygeek/tabular'                " Tabularize a-=
+  " Plug 'sjl/clam.vim'                     " Run shell command
+  " Plug 'tpope/vim-commentary'             " Commentary
   Plug 'christoomey/vim-tmux-navigator'   " Vim - TMUX navigator
   " Plug 'bronson/vim-trailing-whitespace'
   " Plug 'evidens/vim-twig'
@@ -47,18 +47,18 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/fzf.vim'
 
   " Haskell
-  Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-  Plug 'eagletmt/ghcmod-vim'
-  Plug 'eagletmt/neco-ghc'
-  Plug 'scrooloose/syntastic'             " Error display
-  Plug 'tomtom/tlib_vim'                  "
-  Plug 'MarcWeber/vim-addon-mw-utils'     "
-  Plug 'ervandew/supertab'                "
-  Plug 'Shougo/neocomplete'               "
-  Plug 'junegunn/fzf.vim'
-  Plug 'bitc/vim-hdevtools'
-  Plug 'SirVer/ultisnips'
-  Plug 'honza/vim-snippets'
+  " Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+  " Plug 'eagletmt/ghcmod-vim'
+  " Plug 'eagletmt/neco-ghc'
+  " Plug 'scrooloose/syntastic'             " Error display
+  " Plug 'tomtom/tlib_vim'                  "
+  " Plug 'MarcWeber/vim-addon-mw-utils'     "
+  " Plug 'ervandew/supertab'                "
+  " Plug 'Shougo/neocomplete'               "
+  " Plug 'junegunn/fzf.vim'
+  " Plug 'bitc/vim-hdevtools'
+  " Plug 'SirVer/ultisnips'
+  " Plug 'honza/vim-snippets'
 filetype plugin indent on                 " required!
 call plug#end()
 

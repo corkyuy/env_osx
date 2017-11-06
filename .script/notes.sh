@@ -27,3 +27,12 @@ na() {
 nr() {
   rm -i $NOTE_SRC/"$1".md
 }
+
+np() {
+  pushd $NOTE_SRC
+  git add *.md
+  git add -u
+  gc -m "Updates: $* "
+  gp
+  popd
+}

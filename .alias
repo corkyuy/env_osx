@@ -13,3 +13,11 @@ alias brew-update='brew update && brew upgrade && brew cleanup'
 alias ctrlp-root='touch .ctrlp'
 alias hdevtools-stop='pkill hdevtools'
 alias t='todo.sh'
+
+# Git
+
+alias gst='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+

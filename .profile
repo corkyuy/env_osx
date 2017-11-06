@@ -9,7 +9,7 @@ export PATH="$HOME/config/.script:$PATH"
 
 ### PYTHON ###
 # pyenv #
-eval "$(pyenv init -)"
+#eval "$(pyenv init -)"
 
 export HOMEBREW_EDITOR=vim
 
@@ -36,17 +36,28 @@ source ~/config/.make_osx_better
 export TERM=screen-256color
 
 ###
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-  . $(brew --prefix)/etc/bash_completion.d/tmux
-fi
+#if [ -f $(brew --prefix)/etc/bash_completion ]; then
+#  . $(brew --prefix)/etc/bash_completion
+#  #. $(brew --prefix)/etc/bash_completion.d/tmux
+#fi
 
 ### MOTD ###
-motd.sh
+#motd.sh
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+#export PATH="$PATH:$HOME/.rvm/bin"
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 ### Stack
-export PATH=$(stack path --bin-path)
+#export PATH=$(stack path --bin-path)
+#export PATH="$HOME/.local/bin:$PATH"
+
+### For nix environment
+if [ -z ${NIX_REMOTE+x} ]; then
+  echo "NOT NIX";
+else
+  echo "Loading NIX profile"
+  source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh;
+fi
+
+
