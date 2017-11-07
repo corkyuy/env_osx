@@ -58,4 +58,10 @@ curr=~/config
 ### NOTES ###
     source $curr/.script/notes.sh
 
+#   -------------------------------
+#   2. TOOLS
+#   -------------------------------
+
+#   Setup fzf key bindings
+    source "/Users/corkyuy/.fzf/shell/key-bindings.bash"
 
