@@ -48,7 +48,9 @@ curr=~/config
     set -o vi
 
     source $curr/.make_osx_better
-
+### NIX ###
+    unset NIX_REMOTE
+ 
 ### MOTD ###
     motd.sh
 
