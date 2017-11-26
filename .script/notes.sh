@@ -29,10 +29,40 @@ nr() {
 }
 
 np() {
-  pushd $NOTE_SRC
+  pushd $NOTE_SRC > /dev/null 2>&1
   git add *.md
   git add -u
   gc -m "Updates: $* "
   gp
-  popd
+  popd > /dev/null 2>&1
+}
+
+nfs() {
+  if [ -d "$*" ]; then
+    grep -vnRH '$*' $NOTE_SRC/* | awk ' \
+      function basename(file, a, n) \
+      { \
+        n = split(file, a, "/");\
+        return a[n] \
+      };\
+      { split($0,a,":"); \
+        print basename(a[1]) ":" a[2] ":"  a[3] \
+      }' | fzf
+  else
+    grep -vnRH '^[[:space:]]*$' $NOTE_SRC/* | awk ' \
+      function basename(file, a, n) \
+      { \
+        n = split(file, a, "/");\
+        return a[n] \
+      };\
+      { split($0,a,":"); \
+        print basename(a[1]) ":" a[2] ":"  a[3] \
+      }' | fzf
+  fi
+}
+nfe() {
+  pushd $NOTE_SRC > /dev/null 2>&1
+  filerow=$(grep -B 2 -A 2 -vn '^[[:space:]]*$' * | fzf | cut -d":" -f1-2)
+  vim +$(echo $filerow | cut -d":" -f2) $(echo $filerow | cut -d":" -f1)
+  popd > /dev/null 2>&1
 }
