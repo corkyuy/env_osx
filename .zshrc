@@ -115,11 +115,11 @@ source ~/config/.make_osx_better
 
 #export PATH=$(stack path --bin-path)
 
-if [ -z ${NIX_REMOTE+x} ]; then
-  echo "NOT NIX";
-else
-  echo "Loading NIX profile"
-  source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh;
-fi
+#if [ -z ${NIX_REMOTE+x} ]; then
+#  echo "NOT NIX";
+#else
+#  echo "Loading NIX profile"
+#  source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh;
+#fi
 
 

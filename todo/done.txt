@@ -1,0 +1,17 @@
+x 2017-07-01 HW1 +DE @BigData
+x 2017-07-02 Create a CLI notes taking script +LEARN
+x 2017-07-03 Python lessons for kids +Kids
+x 2017-07-05 HW2 +DE @BigData
+x 2017-07-05 Learn how to do uml in txt +LEARN
+x 2017-07-05 typing tutor game for kids +kids
+x 2017-07-06 Symbolic links to config +home
+x 2017-07-08 add mindmap support for todo.txt +learn
+x 2017-07-09 HW2 +de @bigdata
+x 2017-07-09 Learning haskell project Chap 13 +learn
+x 2017-07-11 do chap 13 exercises +haskell
+x 2017-07-18 vagrant to load ubuntu
+x 2017-07-18 try out coreos +coreos
+x 2017-07-19 get email of tito rossini, beging and rg by weekend +baptism rosini ok @wait rg ok
+x 2017-11-08 HW3 +de @bigdata
+x 2017-11-08 research redis clustering for pvfx +idea shardin etcd @defer
+x 2017-11-08 read chap 25 +haskell

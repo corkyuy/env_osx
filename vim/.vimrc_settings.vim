@@ -12,8 +12,7 @@ if version >= 600
 else
   :finish
 endif
-" }}}
-
+" }}} 
 set encoding=utf-8              " Encoding to utf-8
 set backspace=indent,eol,start  " Allow backspace in insert mode
 set hidden                      " Buffers can exist in the background
@@ -51,7 +50,7 @@ set tabstop=2
 set expandtab
 set list listchars=tab:▸\ ,trail:·,eol:¬ " Display tabs and trailing spaces visually
 set nowrap                               " Don't wrap lines
-set anti                                 " Anti-alias
+"set anti                                 " Anti-alias
 set ruler
 set wildmode=longest,list,full
 set wildmenu
@@ -203,3 +202,19 @@ let g:UltiSnipsEditSplit="vertical"
 
 " yy not working
 ""set clipboard=unnamed
+
+
+" VIM-EASY-ALIGN
+" ============================
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
+" GREPPER
+" ============================
+"
+nnoremap <leader>g :Grepper -tool ack<cr>
+
+

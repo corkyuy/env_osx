@@ -45,6 +45,7 @@ call plug#begin('~/.vim/plugged')
   " Plug 'garbas/vim-snipmate'              "
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
+  Plug 'junegunn/vim-easy-align'
 
   " Haskell
   " Plug 'Shougo/vimproc.vim', {'do' : 'make'}
@@ -59,6 +60,7 @@ call plug#begin('~/.vim/plugged')
   " Plug 'bitc/vim-hdevtools'
   " Plug 'SirVer/ultisnips'
   " Plug 'honza/vim-snippets'
+  Plug 'mhinz/vim-grepper'
 filetype plugin indent on                 " required!
 call plug#end()
 

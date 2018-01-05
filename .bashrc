@@ -50,6 +50,14 @@ curr=~/config
     source $curr/.make_osx_better
 ### NIX ###
     unset NIX_REMOTE
+    source ~/nix.sh
+
+    function nix-switch() {
+      nix-env --switch-profile $NIX_USER_PROFILE_DIR/$1
+    }
+    function nix-profile() {
+      ls -al ~/.nix-profile | awk '{print $NF}' | xargs basename
+    }
  
 ### MOTD ###
     motd.sh
@@ -67,3 +75,17 @@ curr=~/config
 #   Setup fzf key bindings
     source "/Users/corkyuy/.fzf/shell/key-bindings.bash"
 
+#   NIX haskell shortcuts
+    env-type () {
+      envtype="$1"
+      shift
+      nix-shell -Q -p $envtype "$@"
+    }
+
+    haskell-env () {
+      env-type "haskellEnv" "$@"
+    }
+
+    haskell-env-hoogle () {
+      env-type "haskellEnvHoogle" "$@"
+    }
