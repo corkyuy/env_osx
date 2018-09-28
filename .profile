@@ -3,6 +3,7 @@ export PATH="~/.app:$PATH"
 export PATH=/usr/local/bin:$PATH
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/config/.script:$PATH"
+export PATH="$HOME/.cabal/bin:$PATH"
 #export PATH="$HOME/.node/bin:$PATH"
 #export PATH="$HOME/Documents/workspace/go/bin:$PATH"
 #export PATH="$HOME/Documents/workspace/xen/bin:$PATH"

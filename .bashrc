@@ -51,6 +51,7 @@ curr=~/config
 ### NIX ###
     unset NIX_REMOTE
     source ~/nix.sh
+    #unset NIX_PATH
 
     function nix-switch() {
       nix-env --switch-profile $NIX_USER_PROFILE_DIR/$1
