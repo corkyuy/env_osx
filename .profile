@@ -54,11 +54,5 @@ export TERM=screen-256color
 #export PATH="$HOME/.local/bin:$PATH"
 
 ### For nix environment
-#if [ -z ${NIX_REMOTE+x} ]; then
-#  echo "NOT NIX";
-#else
-#  echo "Loading NIX profile"
-#  source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh;
-#fi
-
+. /Users/corkyuy/.nix-profile/etc/profile.d/nix.sh"
 

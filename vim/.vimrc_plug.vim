@@ -16,7 +16,7 @@ call plug#begin('~/.vim/plugged')
 " --- PLUGINs HERE
   Plug 'tpope/vim-vinegar'                " Vim Explorer extension
   " Plug 'tpope/vim-fugitive'               " Git
-  " Plug 'tpope/vim-surround'               " Surround
+  Plug 'tpope/vim-surround'               " Surround
   Plug 'kien/ctrlp.vim'                   " Fast file loading
   Plug 'vim-airline/vim-airline'          " Status line
   " Plug 'Lokaltog/vim-easymotion'          " Easy movement <Leader>-[j/k]
@@ -61,6 +61,11 @@ call plug#begin('~/.vim/plugged')
   " Plug 'SirVer/ultisnips'
   " Plug 'honza/vim-snippets'
   Plug 'mhinz/vim-grepper'
+
+  " Hard mode
+  Plug 'takac/vim-hardtime'
+  " VOTL
+  Plug 'insanum/votl'
 filetype plugin indent on                 " required!
 call plug#end()
 
