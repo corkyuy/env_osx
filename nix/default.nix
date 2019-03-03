@@ -2,7 +2,9 @@ with { fetch = import ./nix/fetch.nix; };
 let
 
   # The (pinned) Nixpkgs where the original packages are sourced from
-  pkgs = import fetch.nixpkgs {};
+  pkgs = import fetch.nixpkgs {
+    config.vim.gui = "unknown"; # Don't build with gui enabled
+  };
 
   # The list of packages to be installed
   homies = with pkgs;
