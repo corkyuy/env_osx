@@ -15,6 +15,7 @@ let
       solarized
       surround
       syntastic
+      tabular
       tmux-navigator
       vim-airline
       vim-easy-align
