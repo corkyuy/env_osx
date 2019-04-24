@@ -4,6 +4,7 @@ let
   # The (pinned) Nixpkgs where the original packages are sourced from
   pkgs = import fetch.nixpkgs {
     config.vim.gui = "unknown"; # Don't build with gui enabled
+    config.vim.darwin = true;
   };
 
   # The list of packages to be installed
