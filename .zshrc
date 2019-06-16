@@ -62,9 +62,10 @@ ZSH_THEME="refined"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+source $ZSH/oh-my-zsh.sh
 plugins=(git osx tmux vi-mode brew)
 
-source $ZSH/oh-my-zsh.sh
+
 
 # User configuration
 
@@ -107,6 +108,7 @@ repo_information() {
 }
 
 
+########################3
 
 source ~/config/.alias
 source ~/config/.make_osx_better
@@ -121,5 +123,14 @@ source ~/config/.make_osx_better
 #  echo "Loading NIX profile"
 #  source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh;
 #fi
+
+
+#source ~/config/.bash_profile
+
+echo ### Key volume mount ###
+hdiutil attach "/Users/corkyuy/Dropbox/Shares/Kristine/Corky docs/Wallet/Keys.dmg"
+source /Volumes/Keys/secret_key.sh
+if [ -e /Users/corkyuy/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/corkyuy/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
 
 
