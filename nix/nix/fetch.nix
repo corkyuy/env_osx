@@ -1,23 +1,19 @@
 # A record, from name to path, of the third-party packages
 let
   versions = builtins.fromJSON (builtins.readFile ./versions.json);
-  fetchTarball =
+  fetchGit =
     # fetchTarball version that is compatible between all the versions of
     # Nix
-    { url, sha256 }@attrs:
+    { url, rev, name }@attrs:
     let
-      inherit (builtins) lessThan nixVersion fetchTarball;
+      inherit (builtins) fetchGit;
     in
-      if lessThan nixVersion "1.12" then
-        fetchTarball { inherit url; }
-      else
-        fetchTarball attrs;
+      fetchGit attrs;
 in
   builtins.mapAttrs (_: spec:
-      fetchTarball {
-        url =
-          with spec;
-          "https://github.com/${owner}/${repo}/archive/${rev}.tar.gz";
-        sha256 = spec.sha256;
+      fetchGit {
+        url = spec.url;
+        rev = spec.rev;
+        name = spec.name;
       }
     ) versions

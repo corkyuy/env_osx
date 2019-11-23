@@ -16,6 +16,7 @@ let
       tmux
       vim
 
+      pkgs.autojump
       pkgs.cabal-install
       pkgs.cabal2nix
       pkgs.cacert
@@ -29,6 +30,7 @@ let
       pkgs.nix
       pkgs.nix-prefetch-git
       pkgs.pass
+      pkgs.reattach-to-user-namespace
       pkgs.tree
       pkgs.xclip
     ];
