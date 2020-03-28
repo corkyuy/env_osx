@@ -33,6 +33,7 @@ let
       pkgs.reattach-to-user-namespace
       pkgs.tree
       pkgs.xclip
+      pkgs.haskellPackages.niv
     ];
 
   ## Some cunstomizations
