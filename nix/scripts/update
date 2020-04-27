@@ -1,1 +1,1 @@
-nix-prefetch-git https://github.com/nixos/nixpkgs-channels.git --rev c1966522d7d5fa54db068140d212cba18731dd98
+nix-prefetch-git https://github.com/nixos/nixpkgs-channels.git --rev 10100a97c8964e82b30f180fda41ade8e6f69e41

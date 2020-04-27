@@ -26,7 +26,7 @@ let
       vim-surround
       vim-tmux-navigator
       vim-trailing-whitespace
-      vim-vinegar
+      #vim-vinegar
       vimproc
       #youcompleteme
     ];

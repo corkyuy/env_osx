@@ -147,10 +147,10 @@ noremap <leader>b<space> :CtrlPBuffer<cr>
 
 " Switch panel shortcut (TMUX)
 " =============================
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+"nnoremap <C-J> <C-W><C-J>
+"nnoremap <C-K> <C-W><C-K>
+"nnoremap <C-L> <C-W><C-L>
+"nnoremap <C-H> <C-W><C-H>
 
 
 " If you want :UltiSnipsEdit to split your window.
