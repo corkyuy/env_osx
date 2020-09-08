@@ -16,7 +16,7 @@ let
       surround
       syntastic
       tabular
-      tmux-navigator
+      #tmux-navigator
       vim-airline
       vim-easy-align
       vim-easymotion
