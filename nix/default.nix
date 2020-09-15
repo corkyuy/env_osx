@@ -81,6 +81,7 @@ in
     { buildinputs = homies;
       shellHook = ''
         $(bashrc)
+        $(zshrc)
         '';
     }
   else homies
