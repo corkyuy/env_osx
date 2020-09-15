@@ -12,6 +12,7 @@ let
     [
       # Customized packages
       bashrc
+      zshrc
       git
       tmux
       vim
@@ -40,6 +41,9 @@ let
 
   # A custom '.bashrc' (see bashrc/default.nix for details)
   bashrc = pkgs.callPackage ./bashrc {};
+
+  # zshc
+  zshrc = pkgs.callPackage ./zshrc {};
 
   # Git with config baked in
   git = import ./git (

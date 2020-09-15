@@ -1,11 +1,8 @@
 {
   "nixpkgs": {
-    "owner"  : "NixOS",
-    "name"   : "nixpkg-19.09",
-    "repo"   : "nixpkgs-channels",
-    "url"    : "https://github.com/nixos/nixpkgs/",
-    "branch" : "nixos-19.09",
-    "rev"    : "10100a97c8964e82b30f180fda41ade8e6f69e41",
-    "sha256" : "011f36kr3c1ria7rag7px26bh73d1b0xpqadd149bysf4hg17rln"
+    "owner": "NixOS",
+    "repo": "nixpkgs-channels",
+    "rev": "18f9a651f5c697b0aff5e86072111a5678d06dcb",
+    "sha256": "1j6x6x1k207sprghh528z57zmvcp4ma7q57y9lx3xswmzpl8d8z3"
   }
 }

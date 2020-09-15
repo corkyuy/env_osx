@@ -1,1 +1,8 @@
+# If you do not already have cachix, install it:
+nix-env -iA cachix -f https://cachix.org/api/v1/install
+# Use the cache to fetch binaries instead of compiling most packages.
+cachix use srid
+# install defaults
 nix-env -f default.nix -i --remove-all
+# install neurons
+nix-env -if https://github.com/srid/neuron/archive/master.tar.gz
