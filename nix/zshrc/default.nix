@@ -7,5 +7,6 @@ let
     );
 in writeScriptBin "zshrc"
   ''
-    echo ". ${zshrc}"
+    mv ~/.zshrc ~/.zshrc-backup
+    cp ${zshrc} ~/.zshrc
   ''

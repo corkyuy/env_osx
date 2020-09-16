@@ -6,3 +6,5 @@ cachix use srid
 nix-env -f default.nix -i --remove-all
 # install neurons
 nix-env -if https://github.com/srid/neuron/archive/master.tar.gz
+# install ZSHRC
+zshrc
