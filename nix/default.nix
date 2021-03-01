@@ -16,6 +16,7 @@ let
       git
       tmux
       vim
+      nvim
 
       pkgs.autojump
       pkgs.cabal-install
@@ -34,6 +35,7 @@ let
       pkgs.reattach-to-user-namespace
       pkgs.tree
       pkgs.xclip
+      #pkgs.neovim-unwrapped
       pkgs.haskellPackages.niv
     ];
 
@@ -69,11 +71,28 @@ let
         symlinkJoin
         vimPlugins
         vimUtils
-        vim_configurable;
+        vim_configurable
+        ;
       inherit
         git
         tmux;
     };
+  # Vim with a custom vimrc and set of packages
+  nvim = import ./nvim
+    { inherit (pkgs)
+        haskellPackages
+        makeWrapper
+        symlinkJoin
+        vimPlugins
+        vimUtils
+        vim_configurable
+        neovim
+        ;
+      inherit
+        git
+        tmux;
+    };
+
 
 in
   if pkgs.lib.inNixShell

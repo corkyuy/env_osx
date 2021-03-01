@@ -103,3 +103,4 @@ alias neu="neuron -d ~/Dropbox/zette"
 export EDITOR='vim'
 if [ -e /Users/corkyuy/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/corkyuy/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
+unsetopt correct_all
